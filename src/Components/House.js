@@ -18,7 +18,7 @@ export const House = {props} => {
         <ul>
             {house.rooms.map((room, index) => (
                 <li key={index}>
-                 like what 
+                 like what like
                 </li>
             ))}
         </ul>
