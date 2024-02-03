@@ -1,9 +1,7 @@
 import React from 'react';
 import { House } from './House';
-//watch  { houseApi }  change to {  HousesApi } if needed
-import { HousesApi, houseApi } from '../rest/HousesApi.js';
-
-export class HousesList extends React.Component {
+import  { housesApi } from '../rest/HousesApi.js';
+export default class HousesList extends React.Component {
     state = {
         //messing up right here it doesn't want me to use a = 
         houses: []

@@ -3,7 +3,7 @@ const MADHOUSES_ENDPOINT = 'http://anicent-taiga-31359.herokuapp.com/api/houses'
 class HousesApi {
     get = async () => {
         try {
-        const resp = await fetch (MADHOUSES_ENDPOINTHOUSES_ENDPOINT);
+        const resp = await fetch (MADHOUSES_ENDPOINT);
         const data = await resp.json();
         return data;
          } catch(e) {
@@ -32,4 +32,4 @@ class HousesApi {
     }
 }
 
-export const HousesApi = new HousesApi();
+export const housesApi = new HousesApi();
