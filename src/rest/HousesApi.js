@@ -1,9 +1,9 @@
-const MADHOUSES_ENDPOINT = 'http://anicent-taiga-31359.herokuapp.com/api/houses';
-
+const HOUSES_ENDPOINT = 'http://anicent-taiga-31359.herokuapp.com/api/houses';
+//heroku was blocked by CORS so this bascially broke the project
 class HousesApi {
     get = async () => {
         try {
-        const resp = await fetch (MADHOUSES_ENDPOINT);
+        const resp = await fetch (HOUSES_ENDPOINT);
         const data = await resp.json();
         return data;
          } catch(e) {
@@ -14,7 +14,7 @@ class HousesApi {
    //I forgot what ` do 
     pub = async (house) => {
         try {
-            const resp = await fetch(`${MADHOUSES_ENDPOINT}/${house._id}` , {
+            const resp = await fetch(`${HOUSES_ENDPOINT}/${house._id}` , {
                 //idk what 'PUT' is or even used for CHAT
                 method: 'PUT',
                 //'Content-Type'; 'application/json' don't know that is CHAT
